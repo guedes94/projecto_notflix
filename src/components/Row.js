@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import { getMovies } from "../api";
 import "./Row.css";
+import "./Row.css";
+
+
+
 
 const imageHost = "https://image.tmdb.org/t/p/original/";
 function Row({ title, path, isLarge }) {
@@ -37,7 +41,9 @@ function Row({ title, path, isLarge }) {
           );
         })}
       </div>
-    </div>
+        
+
+      </div>
   );
 }
 

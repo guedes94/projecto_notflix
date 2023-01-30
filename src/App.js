@@ -1,23 +1,18 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Row from "./components/Row";
-import categories from "./api";
-import Banner from "./components/Banner";
 import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
 
 function App() {
   return (
-    <div className="App"> <Nav />
-    <Banner />
-    {categories.map((category) => {
-      return (
-        <Row
-          key={category.name}
-          title={category.title}
-          path={category.path}
-          isLarge={category.isLarge}
-        />
-      );
-    })}
+    <div className="App"> 
+    <Nav />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+
+    </Routes>
   </div>
 );
 }

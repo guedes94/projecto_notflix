@@ -5,9 +5,12 @@
 
 .row-cards {
   display: flex;
+  flex-wrap: nowrap;
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px;
+  gap: 20px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .row-cards::-webkit-scrollbar {
@@ -17,7 +20,7 @@
 .movie-card {
   object-fit: contain;
   width: 100%;
-  max-height: 100px;
+  min-width: 200px;
   margin-bottom: 10px;
   transition: transform 450ms;
 }
@@ -25,7 +28,7 @@
 .movie-card-large {
   object-fit: contain;
   width: 100%;
-  max-height: 250px;
+  min-width: 300px;
   margin-bottom: 10px;
   transition: transform 450ms;
 }
