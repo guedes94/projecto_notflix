@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./Nav.css";
+
+
 function Nav() {
   const [show, setShow] = React.useState(false);
 
@@ -8,6 +10,9 @@ function Nav() {
       setShow(window.scrollY > 100);
     });
   }, []);
+
+
+
 
   return (
     <div className={`nav-container ${show && "nav-container-black"}`}>
