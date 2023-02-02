@@ -1,20 +1,27 @@
 import { useState } from "react"
+import "./Login.css"
 
 function Login() {
 
     const [formData, setFormData] = useState({
         email: '', // required
-        password: '' // required
+        password: '', // required
+        permission:0,
     })
+    const [users, setUsers] = useState([]);
+
+    const url = "http://localhost:5000"
 
     function handleSubmit(e) {
         e.preventDefault()
-        fetch('http://localhost:3000/login', {
+        fetch(`${url}/users`,{...users}, {
             method: 'POST',
             headers: {'Content-Type' : 'application/json'},
             body: JSON.stringify(formData)
         })
-        .then(res => res.json())
+        .then(res => {
+            return res.json()
+        })
         .then(data => console.log(data.user))
     }
 
