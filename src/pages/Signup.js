@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./Signup.css"
 
 function Signup() {
     const [formData, setFormData] = useState({
@@ -24,13 +25,13 @@ function Signup() {
     }
 
     return (
-        <div>
-            <h1>Signup Form</h1>
+        <div className="signup-container">
+            <h1 className="title-signup" >Create an Account</h1>
             <form className='login-form' onSubmit={e => handleSubmit(e)}>
                 {/* <input type='text' placeholder='Username' value={formData.username} name='username' onChange={e => handleChange(e)} ></input> */}
                 <input type='text' placeholder='Email' value={formData.email} name='email' onChange={e => handleChange(e)} ></input>
                 <input type='text' placeholder='Password' value={formData.password} name='password' onChange={e => handleChange(e)} ></input>
-                <button className='login-btn' type='submit'>Sign Up</button>
+                <button className='login-btn' type='submit'>Register</button>
             </form>
         </div>
     )

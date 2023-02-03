@@ -2,9 +2,17 @@
     "users": [
       {
         "username": "filipe160194@gmail.com",
+        "name": "Filipe",
         "password": "12345",
         "permission":1,
         "id": 1
+      },
+      {
+        "username": "andreia@gmail.com",
+        "name": "Andreia",
+        "password": "12345",
+        "permission":1,
+        "id": 2
       }
     ]
   }

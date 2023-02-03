@@ -1,0 +1,15 @@
+.movie-name-color{
+    color:white;
+    align-items: center;
+    font-size: small;    
+    margin: 10px;
+    display: inline-block;
+}
+.remove-fav{
+    align-items: center;
+    width:55px;
+    height: 15px;
+    font-size: 10px;
+    margin: auto;
+    
+}

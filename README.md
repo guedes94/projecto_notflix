@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+projecto notflix simplesmente para não ter o nome netflix.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+correr servidor num terminar e noutro terminar correr a aplicação
 
-## Available Scripts
 
-In the project directory, you can run:
+recurso à API tmdb para acessar ao conteudo dos filmes e séries
 
-### `npm start`
+criei um login simplificado que identifica se os dados existem em localhost e se sim,  entra na home se não fica no login.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dados para login:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+email:filipe160194@gmail.com
+password:12345
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+criei home e favoritos e login
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+No login
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+identica se está ou não logado, caso não esteja logado não vai para a home
+Criei butão para logout que elimina os dados do localhost e volta para a pagina de login
+Caso os dados de login não existam parece mensagem de erro
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Estudei o sistema de rotas react react-router-dom para criar as rotas 
+utilizei o navigate para a navegação.
 
-### `npm run eject`
+É possivel adicionar aos favoritos e remover o titulo do filme/serie dos favoritos
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+não criei acesso à pagina de favoritos terá de ser via brower http://localhost:3000/favorites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+cesso à pagina de registar terá de ser via brower http://localhost:3000/signup
+não terminei de a fazer não estava a pensar em fazer mas comecei a fazer
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
